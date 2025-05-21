@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploradores Digitales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 20px;
+            background-color: white;
+            max-width: 900px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #999;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        td[contenteditable="true"] {
+            background-color: #ffffe0;
+            cursor: text;
+        }
+
+        figure {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        figcaption {
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exploradores Digitales</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre Nosotros</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <h2>Bienvenido</h2>
+        <p>Somos un grupo apasionado por la tecnología, la innovación y el aprendizaje digital. Este sitio es una muestra de nuestros conocimientos en desarrollo web.</p>
+        <p>Explora nuestra tabla editable con temas que estamos investigando:</p>
+
+        <table>
+            <tr>
+                <th>Tema</th>
+                <th>Estado</th>
+                <th>Notas</th>
+            </tr>
+            <tr>
+                <td contenteditable="true">Impresión 3D</td>
+                <td contenteditable="true">Activo</td>
+                <td contenteditable="true">Diseño y prototipado</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">Blockchain</td>
+                <td contenteditable="true">Investigando</td>
+                <td contenteditable="true">Seguridad y registros</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">Realidad Virtual</td>
+                <td contenteditable="true">Implementado</td>
+                <td contenteditable="true">Simulaciones educativas</td>
+            </tr>
+        </table>
+        <p>Puedes hacer clic en cualquier celda para editarla.</p>
+    </main>
+
+    <main id="sobre">
+        <h2>Sobre Nosotros</h2>
+        <p>El equipo está conformado por estudiantes de informática interesados en mejorar sus habilidades digitales. Cada uno tiene una especialidad diferente:</p>
+        <table>
+            <tr>
+                <td><img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sofía Martínez" width="100"></td>
+                <td>Sofía Martínez - Diseñadora UX/UI, apasionada por crear experiencias agradables.</td>
+            </tr>
+            <tr>
+                <td><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Diego Ramos" width="100"></td>
+                <td>Diego Ramos - Backend Developer enfocado en seguridad y datos.</td>
+            </tr>
+            <tr>
+                <td><img src="https://randomuser.me/api/portraits/women/48.jpg" alt="Elena Torres" width="100"></td>
+                <td>Elena Torres - Frontend Developer, ama trabajar con HTML, CSS y JavaScript.</td>
+            </tr>
+        </table>
+    </main>
+
+    <main id="galeria">
+        <h2>Galería de Imágenes</h2>
+        <p>Aquí algunas imágenes que representan nuestros intereses tecnológicos:</p>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1581090700227-1e8c92860c7c?auto=format&fit=crop&w=200&q=80" alt="IA" width="100">
+            <figcaption>Inteligencia Artificial</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=200&q=80" alt="Robot" width="100">
+            <figcaption>Robots y automatización</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=200&q=80" alt="Web" width="100">
+            <figcaption>Diseño web moderno</figcaption>
+        </figure>
+    </main>
+
+    <main id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o quieres colaborar con nosotros?</p>
+        <ul>
+            <li>Email: contacto@exploradoresdigitales.com</li>
+            <li>Teléfono: 5372-6241</li>
+            <li>Instagram: @exploradoresdigitales</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Exploradores Digitales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
